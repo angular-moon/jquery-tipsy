@@ -4,11 +4,12 @@
     "name": "jquery-tipsy",
     "main": "jquery.tipsy.js",
     "dependencies": [
-        "jquery@1.8.3"
+        "jquery@1.8.3",
+        "css"
     ],
     "shim": {
         "jquery.tipsy.js": {
-            "deps": ["jquery"]
+            "deps": ["jquery", "css!jquery.tipsy.css"]
         }
     }
 }
