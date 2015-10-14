@@ -111,6 +111,8 @@
         tip: function() {
             if (!this.$tip) {
                 this.$tip = $('<div class="tipsy"></div>').html('<div class="tipsy-arrow"></div><div class="tipsy-inner"></div>');
+                if(this.options.maxWidth)
+                    this.$tip.find(".tipsy-inner").css("maxWidth", this.options.maxWidth);
                 this.$tip.data('tipsy-pointee', this.$element[0]);
             }
             return this.$tip;
